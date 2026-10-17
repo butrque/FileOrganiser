@@ -5,13 +5,6 @@ from watchdog.events import FileSystemEventHandler
 import json
 import sys
 import winreg as reg
-import sys
-import winreg as reg
-
-import sys
-import winreg as reg
-from pathlib import Path
-
 
 def setup_startup():
   script_path = str(Path(__file__).resolve())
