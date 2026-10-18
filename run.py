@@ -117,7 +117,7 @@ for i in [PHOTOS_DIR, VIDEOS_DIR, MUSIC_DIR, ARCHIVE_DIR, SCRIPTS_DIR, EXE_DIR]:
 class FileHandler(FileSystemEventHandler):
     def on_created(self, event):
         if event.is_directory or event.src_path.endswith(
-            (".crdownload", ".temp", ".part")
+            (".crdownload", ".temp", ".tmp",".part")
         ):
             return
 
